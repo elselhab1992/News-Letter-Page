@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Newsletter sign-up</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-content">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>
+            <span
+              ><img src="/assets/images/icon-list.svg" alt="icon-list"
+            /></span>
+            Product discovery and building what matters
+          </li>
+          <li>
+            <span
+              ><img src="/assets/images/icon-list.svg" alt="icon-list" /></span
+            >Measuring to ensure updates are a success
+          </li>
+          <li>
+            <span
+              ><img src="/assets/images/icon-list.svg" alt="icon-list" /></span
+            >And much more!
+          </li>
+        </ul>
+        <form>
+          <label for="email">Email address</label><br />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="email@company.com"
+          /><br />
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <div class="right-content">
+        <img
+          class="bigCard"
+          src="/assets/images/illustration-sign-up-desktop.svg"
+          alt="card-image"
+        />
+        <img
+          class="mobile-card"
+          src="/assets/images/illustration-sign-up-mobile.svg"
+          alt="card"
+        />
+      </div>
+    </div>
+    <!-- Success message start -->
+    <div class="success hide">
+      <img src="./assets/images/icon-success.svg" alt="success" />
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <strong>@loremcompany.com</strong> Please open it and click the button
+        inside to confirm your subscription.
+      </p>
+      <button class="dismiss">Dismiss message</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
